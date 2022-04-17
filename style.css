@@ -1,0 +1,251 @@
+.container
+{
+    display: flex;
+  
+}
+.stop-start-btn
+{
+    margin-left:5rem;
+    
+}
+.stop-start-btn button{
+    padding:5px 10px;
+    cursor: pointer;
+
+}
+.gameArea{
+    background-color: rgb(56, 56, 56);
+    width: 450px;
+    height: 100%;
+    position: absolute;
+    margin:auto;
+    left: 35%; 
+    overflow: hidden;
+}
+
+.track{
+    position:absolute;
+    top:-500px;
+    width: 450px;
+    height: 2000px;
+    
+    background-image: url("assets/track.png");
+    background-size: cover;
+    background-position: center;
+    /* animation: trackMove 1s linear  infinite; */
+
+}
+.timer{
+    position: relative;
+    top: 14%;
+    width:50%;
+    z-index: 1;
+    left: 28%;
+    color: #000;
+    font-size: 3rem;
+    background-color: rgba(255, 255, 255, 0.849);
+    text-align: center;
+    
+}
+.add-track-animation{
+    animation: trackMove 1s linear  infinite; 
+}
+
+
+/* #line-1{
+    position: absolute;
+    height: 100px;
+    width: 10px;
+    margin-top: -280px;
+    margin-left: 100px;
+    background-color: rgb(152, 152, 152);
+    animation: line1Move linear 3s infinite;
+}
+
+#line-2{
+    position: absolute;
+    height: 100px;
+    width: 10px;
+    margin-top: -100px;
+    margin-left: 100px;
+    background-color: rgb(152, 152, 152);
+    animation: line2Move linear 2s infinite;
+}
+
+
+
+#line-3{
+    position: absolute;
+    height: 100px;
+    width: 10px;
+    margin-top: 10px;
+    margin-left: 100px;
+    background-color: rgb(152, 152, 152);
+    animation: line3Move linear 2s infinite;
+}
+
+#line-4{
+    position: absolute;
+    height: 100px;
+    width: 10px;
+    margin-top: 30px;
+    margin-left: 230px;
+    background-color: rgb(152, 152, 152);
+    
+}
+
+#line-5{
+    position: absolute;
+    height: 100px;
+    width: 10px;
+    margin-top: 200px;
+    margin-left: 230px;
+    background-color: rgb(152, 152, 152);
+    
+}
+
+
+
+#line-6{
+    position: absolute;
+    height: 100px;
+    width: 10px;
+    margin-top: 385px;
+    margin-left: 230px;
+    background-color: rgb(152, 152, 152);
+   
+}
+
+#line-7{
+    position: absolute;
+    height: 100px;
+    width: 10px;
+    margin-top: 30px;
+    margin-left: 350px;
+    background-color: rgb(152, 152, 152);
+}
+
+#line-8{
+    position: absolute;
+    height: 100px;
+    width: 10px;
+    margin-top: 200px;
+    margin-left: 350px;
+    background-color: rgb(152, 152, 152);
+    
+}
+
+
+
+#line-9{
+    position: absolute;
+    height: 100px;
+    width: 10px;
+    margin-top: 385px;
+    margin-left: 350px;
+    background-color: rgb(152, 152, 152);
+    
+} */
+
+.realcar{
+    position: absolute;
+    width: 45px;
+    height: 100px;
+    bottom: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+}
+.car1{
+    left: 20px;
+    background-image: url("assets/car1.png");
+}
+
+.car2{
+    left: 145px;
+    background-image: url("assets/car2.png");
+}
+
+.car3{
+    left: 270px;
+    background-image: url("assets/car3.png");
+}
+
+.car4{
+    left: 371px;
+    background-image: url("assets/car4.png");
+}
+
+.realcar span{
+    position:absolute;
+    bottom:-23px;
+    color:#fff;
+    font-weight: bold;
+}
+
+.add-car-animation{
+    animation: car linear .3s infinite;
+}
+.gifts{
+    width: 450px;
+    height: 150px;
+    position: absolute;
+
+    bottom: 0px;
+  
+    background-image: url("assets/gifts.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+.finishingLine{
+    width: 450px;
+    height: 20px;
+    left: 0px;
+    top:0;
+    position: absolute;
+    background-image: url("assets/finishingline.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.car-range-form
+{
+    margin-top: 4rem;
+}
+.car-range{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.car-range label{
+    margin-right:0.5rem;
+}
+
+@keyframes trackMove{
+    0%{
+        transform: translateY(0vh);
+    }
+    
+
+    100%{
+        transform: translateY(50vh);
+    }
+}
+
+@keyframes car
+{
+    0%{
+        transform: translate(-1px,-1px);
+    }
+    50%{
+        transform: translate(1px,1px);
+    }
+    100%{
+        transform: translate(-1px,-1px);
+    }
+}
